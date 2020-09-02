@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2.1.0
         with:
-          node-version: '12.x'
+          node-version: "12.x"
 
       - name: Get yarn cache
         id: yarn-cache
@@ -30,10 +30,10 @@ jobs:
 
       - run: yarn install --frozen-lockfile
       - run: yarn build
-#       - run: yarn export
+      #       - run: yarn export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: 4cefa3f7ea66db615b02f7c936dda63ba2166240
+          personal_token: 4cefa3f7ea66db615b02f7c936dda63ba2166240
           publish_dir: ./public
