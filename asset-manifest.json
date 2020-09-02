@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/doulit/static/css/main.5f361e03.chunk.css",
+    "main.js": "/doulit/static/js/main.503bcdfa.chunk.js",
+    "main.js.map": "/doulit/static/js/main.503bcdfa.chunk.js.map",
+    "runtime-main.js": "/doulit/static/js/runtime-main.46258946.js",
+    "runtime-main.js.map": "/doulit/static/js/runtime-main.46258946.js.map",
+    "static/js/2.b9768426.chunk.js": "/doulit/static/js/2.b9768426.chunk.js",
+    "static/js/2.b9768426.chunk.js.map": "/doulit/static/js/2.b9768426.chunk.js.map",
+    "index.html": "/doulit/index.html",
+    "precache-manifest.a1fd7bc1f6d060b4f85ea64dc5c74bf7.js": "/doulit/precache-manifest.a1fd7bc1f6d060b4f85ea64dc5c74bf7.js",
+    "service-worker.js": "/doulit/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/doulit/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.b9768426.chunk.js.LICENSE.txt": "/doulit/static/js/2.b9768426.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/doulit/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.46258946.js",
+    "static/js/2.b9768426.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.503bcdfa.chunk.js"
+  ]
+}
