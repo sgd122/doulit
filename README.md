@@ -6,8 +6,6 @@
 yarn add react-dom react-helmet react-router-dom react-scripts react-toastify styled-components styled-reset
 ```
 
-## 배포
+## 참조
 
-```CMD
-yarn deploy
-```
+[gh-pages](https://github.com/peaceiris/actions-gh-pages)
