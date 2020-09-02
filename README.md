@@ -1,3 +1,5 @@
+![github pages](https://github.com/sgd122/doulit/workflows/github%20pages/badge.svg)
+
 # doulit
 
 ```CMD
