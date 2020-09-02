@@ -35,5 +35,5 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: 4cefa3f7ea66db615b02f7c936dda63ba2166240
+          personal_token: ${{secrets.GH_PAT}}
           publish_dir: ./public
