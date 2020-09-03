@@ -4,15 +4,23 @@ import { Link, withRouter } from "react-router-dom";
 import Input from "./Input";
 import useInput from "../Hooks/useInput";
 import { Compass, HeartEmpty, User, Logo } from "./Icons";
+import headerImage from "../Images/img_mainvisual.jpeg";
 
 const Header = styled.header`
+  width: 100%;
+  min-height: 650px;
+  background: url(${headerImage});
+  background-size: contain;
+  background-repeat: no-repeat;
+`;
+
+const HeaderTitle = styled.header`
   width: 100%;
   border: 0;
   position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
-  border-bottom: ${(props) => props.theme.boxBorder};
   border-radius: 0px;
   display: flex;
   justify-content: center;
@@ -62,7 +70,8 @@ const HeaderLink = styled(Link)`
 `;
 
 const HeaderText = styled.span`
-  color: ${(props) => props.theme.darkBlueColor};
+  color: white;
+  // color: ${(props) => props.theme.white};
 `;
 
 export default withRouter(({ history }) => {
@@ -81,20 +90,22 @@ export default withRouter(({ history }) => {
   ];
   return (
     <Header>
-      <HeaderWrapper>
-        <HeaderColumn>
-          <Link to="/">
-            <Logo />
-          </Link>
-        </HeaderColumn>
-        <HeaderColumn>
-          {menus.map((map) => (
-            <HeaderLink to="#">
-              <HeaderText>{map.name}</HeaderText>
-            </HeaderLink>
-          ))}
-        </HeaderColumn>
-      </HeaderWrapper>
+      <HeaderTitle>
+        <HeaderWrapper>
+          <HeaderColumn>
+            <Link to="/">
+              <Logo />
+            </Link>
+          </HeaderColumn>
+          <HeaderColumn>
+            {menus.map((map) => (
+              <HeaderLink to="#">
+                <HeaderText>{map.name}</HeaderText>
+              </HeaderLink>
+            ))}
+          </HeaderColumn>
+        </HeaderWrapper>
+      </HeaderTitle>
     </Header>
   );
 });
