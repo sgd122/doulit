@@ -17,7 +17,7 @@ const Header = styled.header`
 const HeaderTitle = styled.header`
   width: 100%;
   border: 0;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
