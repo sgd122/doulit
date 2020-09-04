@@ -1,5 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import iconAddressImage from "../Images/footer/icon_address.png";
+import iconEmailImage from "../Images/footer/icon_email.png";
+import iconFaxImage from "../Images/footer/icon_fax.png";
+import iconTellImage from "../Images/footer/icon_tell.png";
 
 const Footer = styled.footer`
   width: 100%;
@@ -19,16 +23,27 @@ const Footer = styled.footer`
 
 const List = styled.ul`
   display: flex;
+  color: white;
+  margin-top:50px;
+  justify-content: center;
+  align-items: center;
 `;
 
 const ListItem = styled.li`
-  &:not(:last-child) {
-    margin-right: 16px;
-  }
+  padding: 0 50px;  
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  font-weight: bold;
 `;
 
-const Link = styled.a`
-  color: ${(props) => props.theme.darkBlueColor};
+const ListItemIcon = styled.div`
+  background:url(${(props) => props.src});
+  background-repeat: no-repeat;
+  background-size:contain;
+  width:30px;
+  height:30px;
+  margin: 0 auto 20px auto;
 `;
 
 const Line = styled.div`
@@ -48,12 +63,32 @@ const Copyright = styled.span`
   letter-spacing: -0.03em;
 `;
 
-export default () => (
+export default () => {
+  const ListMap = [{
+    src:iconAddressImage,
+    text:"051 - 646 - 0456"
+  },{
+    src:iconEmailImage,
+    text:"051 - 646 - 0453"
+  },{
+    src:iconFaxImage,
+    text:"chitosoo@gmail.com"
+  },{
+    src:iconTellImage,
+    text:"한일오피스텔 601호"
+  }];
+
+  return(
   <Footer>
     <List>
-      <ListItem>1</ListItem>
-      <ListItem>2</ListItem>
-      <ListItem>3</ListItem>
+        {
+          ListMap.map(data => (
+            <ListItem>
+              <ListItemIcon src={data.src}/>
+              {data.text}
+            </ListItem>
+          ))
+        }
     </List>
     <Line />
     <Copyright>
@@ -63,4 +98,5 @@ export default () => (
       Copyright © www.doulit.co.kr All rights reserved.
     </Copyright>
   </Footer>
-);
+  );
+};
