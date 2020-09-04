@@ -25,7 +25,7 @@ const HeaderTitle = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 0px;
+  padding: 25px 5px;
   z-index: 2;
 `;
 
@@ -37,7 +37,7 @@ const HeaderWrapper = styled.div`
 `;
 
 const HeaderColumn = styled.div`
-  width: 33%;
+  width: 45%;
   text-align: center;
   &:first-child {
     margin-right: auto;
@@ -65,8 +65,7 @@ const SearchInput = styled(Input)`
 
 const HeaderLink = styled(Link)`
   &:not(:last-child) {
-    margin-right: 30px;
-  }
+    margin-right: 30px;    
 `;
 
 const HeaderText = styled.span`
